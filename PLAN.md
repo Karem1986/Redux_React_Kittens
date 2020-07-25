@@ -1,6 +1,6 @@
 # As a kitten lover, I want to:
 - see random kittens
-- sort them by price, and 
+- sort them by x, and 
 - filter them by some meaningful distinction (for example "tag" or "category")
 
 1. Setup React and Redux & Router 
@@ -37,9 +37,9 @@ Reader: https://reader.codaisseur.com/courses/redux/30-redux-3/01-setup/02-setup
 3. Transfer state to redux 
      - setup [x]
      -  Create reducer for the state we are going to use (if it doesn't exist yet) [x]
-     -create action to feed the data into the store --feed/actions.js []
-     -create action to save the data into redux []
-     -import it into homepage.js []
+     -create action to feed the data into the store --feed/actions.js [x]
+     -create action to save the data into redux [x]
+     -import the selector AND the action into homepage.js []
      -Display products:
-     -create selector []
-     -implement useSelector []
+     -create selector [x]
+     -implement useSelector [x]
