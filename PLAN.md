@@ -1,5 +1,5 @@
 # As a kitten lover, I want to:
--  see an overview of kitten pictures, 
+- see random kittens
 - sort them by price, and 
 - filter them by some meaningful distinction (for example "tag" or "category")
 
@@ -27,3 +27,19 @@ Reader: https://reader.codaisseur.com/courses/redux/30-redux-3/01-setup/02-setup
    - Import Homepage inside App.js [x]
    - import { Switch, Route } from "react-router-dom" [x]
    - Create a Switch route inside app.js [x]
+
+ - Local state
+    - to fetch data: install axios, import useEffect) [x]
+     - Set up useEffect with the API URL or database [x]
+     - Create the const useState -> for kittens [x]
+    - Display a random image kitten  (render) [x] 
+
+3. Transfer state to redux 
+     - setup [x]
+     -  Create reducer for the state we are going to use (if it doesn't exist yet) [x]
+     -create action to feed the data into the store --feed/actions.js []
+     -create action to save the data into redux []
+     -import it into homepage.js []
+     -Display products:
+     -create selector []
+     -implement useSelector []
