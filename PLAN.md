@@ -46,5 +46,35 @@ Reader: https://reader.codaisseur.com/courses/redux/30-redux-3/01-setup/02-setup
      -create selector [x]
      -implement useSelector [x]
      
-
 4. Search a cat by id [x]
+5. When user clicks on a pic they can go to the image details 
+
+6. User shoud be able to Sign up 
+ - Route to sign up page 
+ - Signup form 
+ - Event handler--> onChange & onSubmit 
+ - Dispatch an action (thunk--request to the backend)
+     -- Kitten's pics to the API 
+     --Email and password 
+- Backend ---> already done with the API cats 
+
+- Thunk (continued)
+
+    - Response (ok) we get a JWT -> we need to stor it
+     - dispatch action (synchronous action, type & payload)
+     
+- Reducer
+
+ make a new reducer (if it does not exist)
+import it in the rootreducer
+ write a case
+ store the token (update the state, we have a token)
+
+Done!
+
+7. Login 
+
+
+8. Log out 
+
+

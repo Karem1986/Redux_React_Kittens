@@ -18,10 +18,6 @@ export default function HomePage() {
     })
     console.log('testing filter', filteringKittens)
 
-
-
-
-
     // useEffect(() => {
     //     async function getKittens() {
     //         const data = await axios.get("https://api.thecatapi.com/v1/images/search")
@@ -41,12 +37,13 @@ export default function HomePage() {
     return (
         <div>
             <h1>Kittens homepage!</h1>
+            <h2>Choose any picture of a kitten: </h2>
             {filteringKittens.map((item, index) => {
                 return (
                     <div key={index}>
-                        <h2>Choose any picture of a kitten: </h2>
-                        <div> <img src={item.url} /></div>
-                        <h3>Kitten's pic width: {item.width} px</h3>
+                        <h3>Meowwwww</h3>
+                        <Link to={`/cat/${item.id}`}><img src={item.url} /></Link>
+
                     </div>
                 )
             })}
