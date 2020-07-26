@@ -50,12 +50,16 @@ Reader: https://reader.codaisseur.com/courses/redux/30-redux-3/01-setup/02-setup
 5. When user clicks on a pic they can go to the image details 
 
 6. User shoud be able to Sign up 
+VIDEO: AUTH (1) https://www.youtube.com/watch?v=AES-Vgx0390&feature=youtu.be
+
+
  - Route to sign up page [x]
  - Make the signup page src/pages/sigup.js [x]
- - Create the form in signup page []
- - Event handler--> onChange & onSubmit 
- - Dispatch an action (thunk--request to the backend)
-     -- Kitten's pics to the API 
+ - Create the form in signup page [x]
+ - Event handler--> onChange & onSubmit with local state  [x]
+ - Dispatch an action (thunk--request to the backend) []
+     -- Make a new slice in the store: store/user/actions.js [x]
+     --Create an action first in actions.js with a Thunk[]
      --Email and password 
 - Backend ---> already done with the API cats 
 
