@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { getKittens } from "../store/feed/action"
 import { useDispatch, useSelector } from "react-redux"
 import { selectKittens } from "../store/feed/selector"
+import { Link } from 'react-router-dom';
 
 export default function HomePage() {
     //set up useState 
@@ -11,6 +12,14 @@ export default function HomePage() {
     //Transfer to Redux 
     const dispatch = useDispatch();
     const displayKittens = useSelector(selectKittens)
+    //Filter by width so only pics less than 600 px are shown
+    const filteringKittens = displayKittens.filter(item => {
+        return item.width < 550
+    })
+    console.log('testing filter', filteringKittens)
+
+
+
 
 
     // useEffect(() => {
@@ -32,15 +41,17 @@ export default function HomePage() {
     return (
         <div>
             <h1>Kittens homepage!</h1>
-            {displayKittens.map((item, index) => {
+            {filteringKittens.map((item, index) => {
                 return (
                     <div key={index}>
-                        <p>{item.id} </p>
+                        <h2>Choose any picture of a kitten: </h2>
                         <div> <img src={item.url} /></div>
-
+                        <h3>Kitten's pic width: {item.width} px</h3>
                     </div>
                 )
             })}
+
+            <Link to={`/id/${kittens.breeds}`}> <img src={kittens.url} /></Link>
 
         </div>
 

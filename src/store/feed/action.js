@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_URL = `https://api.thecatapi.com/v1/images/search`
+const API_URL = `https://api.thecatapi.com/v1/images/search?limit=5&page=10&order=Desc`
+
 
 export async function getKittens(dispatch, getState) {
     try {

@@ -1,7 +1,9 @@
 # As a kitten lover, I want to:
 - see random kittens
-- sort them by x, and 
-- filter them by some meaningful distinction (for example "tag" or "category")
+- filter them by some meaningful distinction (for example "tag" or "category")--only the ones that have name 
+- sort them by x
+
+API: https://docs.thecatapi.com/api-reference/images/images-search
 
 1. Setup React and Redux & Router 
 video example: https://www.youtube.com/watch?v=DD2CnyfXYWY
@@ -43,3 +45,6 @@ Reader: https://reader.codaisseur.com/courses/redux/30-redux-3/01-setup/02-setup
      -Display products:
      -create selector [x]
      -implement useSelector [x]
+     
+
+4. Search a cat by id [x]
